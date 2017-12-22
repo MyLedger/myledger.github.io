@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>++ MyLedger ++</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/UI.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/UI.js"></script>
+  </head>
+  <body>
+      <header>
+        <div class="wrap"><img class="logo" src="img/logo.svg" title="愛記帳 - 2018 推薦記帳 APP">
+          <nav>
+            <ul class="hover-li">
+              <li title="關於愛記帳"><a href="index.html">關於我們</a></li>
+              <li class="focus" title="使用指南"> <a href="FAQ.html">使用指南</a></li>
+              <div class="focus-line"></div>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="wrap"> 
+      <div class="breadcrumbs">
+        <h1>使用指南</h1>
+        <h2>我們整理了您使用愛記帳可能會有的疑問，希望能協助您解決所遇到的問題。</h2>
+      </div>
+    </div>
+    <article class="faq"> 
+      <div class="wrap"> 
+        <aside class="left"> 
+          <ul class="faq-list">
+            <h3>新手上路</h3>
+            <li class="item-01 focus" data="item-01"> <a href="#">功能介面介紹</a></li>
+            <li class="item-02" data="item-02"> <a href="#">新增一筆 收入 / 支出 / 轉帳</a></li>
+            <li class="item-03" data="item-03"> <a href="#">刪除/修改/複製 紀錄</a></li>
+            <li class="item-04" data="item-04"> <a href="#">樣板(週期記帳/快速記帳) </a></li>
+          </ul>
+          <ul class="faq-list">
+            <h3>側欄功能說明</h3>
+            <li class="item-11" data="item-11"> <a href="#">Google 雲端硬碟備份/還原</a></li>
+            <li class="item-12" data="item-12"> <a href="#">CSV 匯入匯出</a></li>
+            <li class="item-13" data="item-13"> <a href="#">管理頁面 (分類/帳戶/標籤/樣板)</a></li>
+            <li class="item-14" data="item-14"> <a href="#">設定頁面   </a></li>
+          </ul>
+          <ul class="faq-list">
+            <h3>常見問與答</h3>
+            <li class="item-21" data="item-21"> <a href="#">換手機的資料保留</a></li>
+            <li class="item-22" data="item-22"> <a href="#">.csv 匯出檔案亂碼</a></li>
+            <li class="item-23" data="item-23"> <a href="#">收不到通知怎麼辦</a></li>
+            <li class="item-24" data="item-24"> <a href="#">記帳小技巧</a></li>
+          </ul>
+        </aside>
+        <div class="fill-bg"></div>
+        <aside class="right"> <a class="close" href="#"> </a>
+          <section class="first" id="item-01"> 
+            <h1 class="title">功能介面介紹</h1>
+            <div class="pics"><img src="img/faq/01-01.png">
+              <ul class="number-list">
+                <li>點擊展開側欄選單</li>
+                <li>切換日期區間單位<br><em>日/週/月/年/全部/自訂日期範圍(開發中)</em></li>
+                <li>切換資料呈現方式<br><em>摘要/紀錄/統計/趨勢/預算</em></li>
+                <li>日期區間<br><em>左右箭頭可切換至上/下一個日期區間</em></li>
+                <li>目前所選日期區間的 收入/支出/結餘 金額<br><em>結餘 = 收入-支出</em></li>
+                <li>新增一筆紀錄 (收入/支出/轉帳)<br><em>轉帳為帳戶間互轉，例如：從您的銀行帳戶提款至現金(錢包)</em></li>
+                <li>顏色<br><em><b class="bg-red dot"></b> - 紅色代表支出  </em><em class="pad30-l"><b class="bg-green dot"></b> - 綠色代表收入</em></li>
+              </ul>
+            </div>
+            <h2 class="left-solid">不同的資料呈現</h2>
+            <div class="pics"><img class="img-default img-750" src="img/faq/01-09.png"></div>
+            <div class="pics pics-1"><img src="img/faq/01-03.png">
+              <div class="p-wrap"> 
+                <p>紀錄 <br><em>清單式的資料呈現，較新日期的紀錄呈現在頁面上方。</em></p>
+              </div>
+            </div>
+            <div class="pics pics-1"><img src="img/faq/01-04.png">
+              <div class="p-wrap"> 
+                <p>統計 <br><em>圖形化的收支數據，清楚呈現您的消費比例，點擊分類選項(A)可查看該分類的子分類統計以及清單資料。</em></p>
+              </div>
+            </div>
+            <div class="pics pics-1"><img src="img/faq/01-05.png">
+              <div class="p-wrap"> 
+                <p>趨勢 <br><em>您收入/支出/結餘的趨勢紀錄，<br>日期區間單位選擇"日"，會帶今日及其前 9 日共 10 筆的資料。<br>選擇"週"、"月"，會帶當週/月的每日資料。<br>如選擇"年"，會帶當年度每月的資料。</em></p>
+              </div>
+            </div>
+            <div class="pics pics-2"><img src="img/faq/01-06.png"><img src="img/faq/01-08.png">
+              <div class="p-wrap"> 
+                <p>預算 <br><em>1. 您可以針對您的總支出做預算控管，也可針對單一分類設定預算，點擊預算進度條(A)進入預算管理頁面。<br></em><em>2. 因為月份有大小月，我們提供的是每日金額的預算設定，一次設定的最小單位是月份。<br></em><em>3. 如您長時間的每日預算都相同，建議填寫”預設每日預算”，如您要針對特別的年份做預算設定，再填寫該年度的每日預算，月份如同。<br></em><em>4. 如兩個欄位以上都有填值，系統採用優先順序如下：本月每日預算  >  本年每日預算  >  預設每日預算。<br></em><em>5. 月份預算的日期範圍，會依您設定的每月起始日而調整。 <br></em></p>
+              </div>
+            </div>
+            <div class="center"><a class="btn prev" href="#" data="item-">上一頁</a><a class="btn next" href="#" data="item-02">下一頁</a></div>
+          </section>
+          <section id="item-02"> 
+            <h1 class="title">新增一筆 收入 / 支出 / 轉帳</h1>
+            <div class="pics pics-2"><img src="img/faq/02-01.png"><img src="img/faq/02-02.png">
+              <div class="p-wrap"> 
+                <p>1. 點擊新增按鈕 </p>
+                <p>2. 輸入金額後，點擊 OK</p>
+              </div>
+            </div>
+            <div class="pics pics-1"> <img src="img/faq/02-03.png">
+              <div class="p-wrap"> 
+                <p>3. 選擇此筆紀錄的類型(預設為支出)<br><em>轉帳為帳戶間互轉</em></p>
+                <p>4. 分類/帳戶為必填內容 , 預設帶最後一次填寫的值</p>
+                <p>5. 點擊儲存即完成新增 , 並回到前一頁</p>
+                <p>6. 如有多筆紀錄，建議選擇 "儲存並在記下一筆"</p>
+                <p>7. 方便的樣板功能 <a class="faq-link" href="#" data="item-04">(點此連結至樣板說明)</a></p>
+              </div>
+            </div>
+            <div class="center"><a class="btn prev" href="#" data="item-01">上一頁</a><a class="btn next" href="#" data="item-03">下一頁</a></div>
+          </section>
+          <section id="item-03"> 
+            <h1 class="title">刪除/修改/複製 紀錄</h1>
+            <div class="pics pics-2"><img src="img/faq/03-01.png"><img src="img/faq/03-02.png">
+              <div class="p-wrap"> 
+                <p>1. 點擊紀錄進入查看頁面</p>
+                <p>2. 圖式依序為"再複製一筆"，"刪除"，"修改"</p>
+              </div>
+            </div>
+            <div class="center"><a class="btn prev" href="#" data="item-02">上一頁</a><a class="btn next" href="#" data="item-04">下一頁</a></div>
+          </section>
+          <section id="item-04"> 
+            <h1 class="title">樣板(週期記帳/快速記帳)</h1>
+            <p>樣板提供您 定期 / 預約交易 、 通知提醒 、自動入帳 ...等便利功能<br>您可以應用在您常用 / 固定的交易紀錄上<br>例如 ： 房租、第四台費用、薪資、信用卡分期、固定捐款...等</p>
+            <h2 class="left-solid">樣板管理頁面  </h2>
+            <div class="pics pics-2"><img src="img/faq/04-01.png"><img src="img/faq/04-02.png">
+              <div class="p-wrap">
+                <p>1. 點擊側欄選單的樣板管理</p>
+                <p>2. 點擊右上角的 + 按鈕</p>
+              </div>
+            </div>
+            <div class="pics pics-2"><img src="img/faq/04-03.png"><img src="img/faq/04-04.png">
+              <div class="p-wrap">
+                <p>3. 填寫必填項目，按儲存完成新增<br><em>如為固定周期性的紀錄，開啟定期/預約交易。</em></p>
+                <p>A. 通知提醒&自動入帳 都有勾選<br><em>入帳日期時間到後會自動入帳，並發出通知告知已入帳。</em></p>
+                <p>B. 只勾選通知提醒<br><em>系統會發出記帳提醒，需在點擊入帳才會新增。 </em></p>
+                <p>C. 只勾選自動入帳<br><em>入帳日期時間到後會自動入帳，不額外再發出通知。</em></p>
+              </div>
+            </div>
+            <div class="pics pics-2"><img src="img/faq/04-05.png"><img src="img/faq/04-06.png">
+              <div class="p-wrap">
+                <p>4. 已新增的樣板</p>
+                <p>5. 在樣板管理中點擊樣板可以"查看該筆樣板的收支紀錄"、"編輯"、"刪除"          </p>
+              </div>
+            </div>
+            <h2 class="left-solid">新增紀錄頁面</h2>
+            <div class="pics pics-2"><img src="img/faq/04-07.png"><img src="img/faq/04-08.png">
+              <div class="p-wrap">
+                <p>新增紀錄時，點擊圖示 icon，再選擇樣板，即立刻完成一筆</p>
+              </div>
+            </div>
+            <div class="center"><a class="btn prev" href="#" data="item-03">上一頁</a><a class="btn next" href="#" data="item-11">下一頁          </a></div>
+          </section>
+          <section id="item-11"> 
+            <h1 class="title">Google 雲端硬碟備份/還原</h1>
+            <p>備份會儲存您目前完整的紀錄狀態，包含您新增調整的分類/帳戶/標籤/樣板...等，<br>如您要更換手機建議您使用雲端備份您目前的資料。</p>
+            <h2 class="left-solid">備份 </h2>
+            <div class="pics pics-2"><img src="img/faq/11-01.png"><img src="img/faq/11-02.png">
+              <div class="p-wrap"> 
+                <p>1. 選擇您要備份至哪個 Google 帳戶</p>
+                <p>2. 選擇要儲存至哪個資料夾</p>
+              </div>
+            </div>
+            <div class="pics pics-2"><img src="img/faq/11-03.png"><img src="img/faq/11-04.png">
+              <div class="p-wrap"> 
+                <p>3. 您可以選擇您目前現有的資料夾或建立一個新的資料夾。 </p>
+                <p>4. 點擊您選擇的資料夾後，按下選取，即完成資料夾選擇。</p>
+                <p>5. 點擊"立即備份"，即完成備份。</p>
+                <p>6. 如您要還原檔案，選擇您備份的資料夾，再點擊檔案，可還原至當時備份的狀態。</p>
+                <P>7. 刪除備份檔案</P>
+              </div>
+            </div>
+            <h2 class="left-solid">還原 </h2>
+            <div class="pics">
+              <ul class="number-list">
+                <li>如為同一隻手機資料還原，系統預設會帶您最後選擇的資料夾。</li>
+                <li>如為新手機，請先至舊手機備份資料，再至新手機選取您當時備份的帳戶與資料夾，將檔案帶回頁面後，再點擊檔案還原(參考備份步驟6)。</li>
+                <li>較新版本的 Android 系統，預設會幫您儲存備份資料，但不是每天即時更新備份，如您在新手機上安裝 APP 後，發現 APP 內已經有舊資料，但不是最新，請在做一次備份還原的動作。</li>
+              </ul>
+            </div>
+            <div class="center"><a class="btn prev" href="#" data="item-04">上一頁</a><a class="btn next" href="#" data="item-12">下一頁          </a></div>
+          </section>
+          <section id="item-12"> 
+            <h1 class="title">CSV 匯入匯出</h1>
+            <p>目前僅支援匯出匯入.csv的檔案，匯出的文件可用純文字文件開啟查看，如您要備份完整的資料庫請使用<a class="faq-link" href="#" data="item-11">雲端硬碟備份。 </a></p>
+            <P>匯入檔案裡的“分類/帳戶/標籤 “， 必須事先在愛記帳 APP 內建立好 。  </P>
+            <h2 class="left-solid">匯出 </h2>
+            <div class="pics pics-1"><img src="img/faq/12-01.png">
+              <div class="p-wrap"> 
+                <p>1. 選擇您要匯出至 Google 雲端硬碟或手機內部空間，預設儲存在 MyLedger_Export 資料夾中。</p>
+                <p>2. 選擇要匯出的時間區間，預設為當月。</p>
+                <p>3. 點擊匯出後即完成匯出。</p><em>註 1：如您匯出至手機內部空間，使用電腦連結讀取不到檔案時，請試著重新啟動電腦及手機，此為手機設備與電腦設備同步的問題。<br></em><em>註 2：如您匯的檔案開啟後為亂碼，建議參考以下方式 <a class="faq-link" href="#" data="item-22">.csv 匯出檔案亂碼該如何處理</a></em>
+              </div>
+            </div>
+            <h2 class="left-solid">匯入</h2>
+            <div class="pics pics-2"><img src="img/faq/12-02.png"><img src="img/faq/12-03.png">
+              <div class="p-wrap"> 
+                <p>1. 選擇要匯入的檔案。</p>
+                <P>2. 選擇是否要保留目前 APP 內的紀錄。</P>
+                <P>3. 選擇檔案。</P>
+                <P>4. 選擇您匯出的.CSV 檔案。</P>
+                <P>5. 點擊確定，即完成匯出。</P>
+              </div>
+            </div>
+            <div class="pics pics-1"><img src="img/faq/12-04.png">
+              <div class="p-wrap"> 
+                <p>如您出現以下錯誤訊息，請確認您 APP 內是否有建立檔案裡的"分類/帳戶/標籤"。    </p>
+              </div>
+            </div>
+            <div class="center"><a class="btn prev" href="#" data="item-11">上一頁</a><a class="btn next" href="#" data="item-13">下一頁</a></div>
+          </section>
+          <section id="item-13"> 
+            <h1 class="title">管理頁面 (分類/帳戶/標籤/樣板)     </h1>
+            <h2 class="left-solid">新增/查看收支紀錄/編輯/刪除/紀錄移轉</h2>
+            <p>管理頁面指的是"分類管理"、"帳戶管理"、"標籤管理"、"樣板管理" </p>
+            <p>以分類為例：<br></p>
+            <div class="pics pics-2"><img src="img/faq/13-01.png"><img src="img/faq/13-02.png">
+              <div class="p-wrap"> 
+                <p>1. 新增選項。</p>
+                <P>2. 查看收支紀錄：可看該選項的所有收支紀錄。</P>
+                <P>3. 編輯：可修改選項名稱/內容。</P>
+                <P>4. 刪除：點擊後會提示該選項內是否有收支紀錄，再點擊確認後才會刪除。</P>
+                <P>5. 紀錄移轉：分類及帳戶才有此功能，可將該分類/帳戶的資料批次修改為其他分類/帳戶。</P>
+                <P>6. 排序：長按選項不要放開，拖曳選項更換排序。</P>
+              </div>
+            </div>
+            <h2 class="left-solid">帳戶管理</h2>
+            <div class="pics pics-2"><img src="img/faq/13-04.png"><img src="img/faq/13-05.png">
+              <div class="p-wrap"> 
+                <p>A. 資產總計：為 B 選項內的金額相加。</p>
+                <p>B. 帳戶餘額 = 該帳戶初始金額 + 該帳戶所有收入/轉入 - 該帳戶所有支出/轉出。</p>
+                <p>C. 帳戶初始金額</p><em>如勾選不列入資產總計，在帳戶管理頁面首頁，會另外獨立列出該帳戶金額</em>
+              </div>
+            </div>
+            <div class="center"><a class="btn prev" href="#" data="item-12">上一頁</a><a class="btn next" href="#" data="item-14">下一頁  </a></div>
+          </section>
+          <section id="item-14"> 
+            <h1 class="title">設定頁面</h1>
+            <div class="pics pics-1"><img src="img/faq/14-01.png">
+              <ul class="number-list">
+                <li>每日記帳提醒<br><em>點擊文字可設定您記帳提醒時間</em></li>
+                <li>每月第一天<br><em>可根據您每月的支薪日，設定起始日</em></li>
+                <li>首頁<br><em>可設定您每次開啟 APP 的第一頁，預設為離開時的頁面</em></li>
+                <li>語言<br><em>預設為您系統的語言</em></li>
+                <li>常用分類/帳戶組合<br><em>開啟常用組合，可於新增紀錄頁面呈現，加快您記帳的速度</em></li>
+                <li>清空所有紀錄<br><em>會清空您所有的收/支/轉紀錄，但您設定的分類/帳戶/樣板...等設定值仍會保留</em></li>
+              </ul>
+            </div>
+            <div class="center"><a class="btn prev" href="#" data="item-13">上一頁</a><a class="btn next" href="#" data="item-21">下一頁 </a></div>
+          </section>
+          <section id="item-21"> 
+            <h1 class="title">換手機的資料保留   </h1>
+            <p class="marg40-b"> <a class="faq-link" href="#" data="item-11"> 請參考雲端硬碟備份</a></p>
+            <div class="center"><a class="btn prev" href="#" data="item-13">上一頁</a><a class="btn next" href="#" data="item-22">下一頁 </a></div>
+          </section>
+          <section id="item-22"> 
+            <h1 class="title">.csv 匯出檔案亂碼</h1>
+            <h2 class="left-solid">使用 Excel 開啟中文文字為亂碼</h2>
+            <p>愛記帳匯出的.csv 檔案編碼格式為 UTF-8，Excel 預設編碼設定為 ANSI，可參照以下方式修改編碼 ：</p>
+            <p> <em>1. 在檔案上點選滑鼠右鍵，將檔案以記事本開啟。</em></p>
+            <p> <em>2. 開啟後，點選儲存，關閉檔案再以 Excel 開啟即可正常顯示。</em></p>
+            <p class="color-red">注意：修改編碼後，如需再匯入愛記帳需再改回 UTF-8 編碼格式。</p>
+            <h2 class="left-solid">將修改後的檔案編碼儲存為 UTF-8 </h2>
+            <p>選擇"另存新檔"，儲存類型選擇"Unicode 文字(*.txt)"</p>
+            <div class="center marg40-t"><a class="btn prev" href="#" data="item-21">上一頁</a><a class="btn next" href="#" data="item-23">下一頁  </a></div>
+          </section>
+          <section id="item-23"> 
+            <h1 class="title">收不到通知怎麼辦</h1>
+            <ul class="number-list marg40-b">
+              <li>如您無法收到愛記帳的通知，請您確認您的 ”自啟動管理 ” 是否設定愛記帳為”允許”。</li>
+              <li>部分手機須允許 “應用自啟動”及”顯示浮動資訊框”兩項功能。</li>
+              <li>自啟動管理允許方式大同小異，可 Google 您的手機型號 + 自啟動管理，可查得相關資訊。</li>
+            </ul>
+            <div class="center"><a class="btn prev" href="#" data="item-22">上一頁</a><a class="btn next" href="#" data="item-24">下一頁    </a></div>
+          </section>
+          <section id="item-24"> 
+            <h1 class="title">記帳小技巧</h1>
+            <h2 class="left-solid">使用信用卡刷卡怎麼記</h2>
+            <P>方式一：<br>您可以建立一個信用卡的帳戶，每筆刷卡金額，由信用卡帳戶支出，待信用卡繳款時，在新增一筆轉帳轉入至信用卡帳戶。</P>
+            <P>方式二：<br>如果您只想粗略紀錄，可以於信用卡繳款時，新增一筆支出即可。</P>
+            <h2 class="left-solid">朋友聚餐幫忙刷卡再收現金</h2>
+            <P>1. 建立一筆信用卡支出 (自己的支出金額)。</P>
+            <P>2. 以及一筆信用卡轉帳轉出(朋友的金額)，可新增一個轉入帳戶"應收帳款"。</P>
+            <P>3. 待收到現金後，再新增一筆轉帳，由"應收帳款"轉入至現金。</P>
+            <div class="center marg40-t"><a class="btn prev" href="#" data="item-23">上一頁</a><a class="btn next" href="#" data="item-01">下一頁         </a></div>
+          </section>
+        </aside>
+      </div>
+    </article>
+      <footer>Copyright © 2017 MyLedger. All rights reserved.</footer><a class="gotop"><i></i><b>Go Top</b></a>
+  </body>
+</html>
