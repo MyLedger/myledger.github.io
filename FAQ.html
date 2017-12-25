@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="愛記帳,記帳APP推薦,收入支出預算管理,理財APP,Myledger">
     <title>++ MyLedger ++</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/UI.css">
@@ -11,7 +12,8 @@
   </head>
   <body>
       <header>
-        <div class="wrap"><img class="logo" src="img/logo.svg" title="愛記帳 - 2018 推薦記帳 APP">
+        <div class="wrap">
+          <div class="logo-wrap"><img class="logo" src="img/logo.svg" title="愛記帳 - 2018 推薦記帳 APP"><span>愛記帳<em>Myledger	</em></span></div>
           <nav>
             <ul class="hover-li">
               <li title="關於愛記帳"><a href="index.html">關於我們</a></li>
@@ -89,7 +91,7 @@
                 <p>預算 <br><em>1. 您可以針對您的總支出做預算控管，也可針對單一分類設定預算，點擊預算進度條(A)進入預算管理頁面。<br></em><em>2. 因為月份有大小月，我們提供的是每日金額的預算設定，一次設定的最小單位是月份。<br></em><em>3. 如您長時間的每日預算都相同，建議填寫”預設每日預算”，如您要針對特別的年份做預算設定，再填寫該年度的每日預算，月份如同。<br></em><em>4. 如兩個欄位以上都有填值，系統採用優先順序如下：本月每日預算  >  本年每日預算  >  預設每日預算。<br></em><em>5. 月份預算的日期範圍，會依您設定的每月起始日而調整。 <br></em></p>
               </div>
             </div>
-            <div class="center"><a class="btn prev" href="#" data="item-">上一頁</a><a class="btn next" href="#" data="item-02">下一頁</a></div>
+            <div class="center"><a class="btn prev" href="#" data="item-24">上一頁</a><a class="btn next" href="#" data="item-02">下一頁</a></div>
           </section>
           <section id="item-02"> 
             <h1 class="title">新增一筆 收入 / 支出 / 轉帳</h1>
@@ -102,10 +104,11 @@
             <div class="pics pics-1"> <img src="img/faq/02-03.png">
               <div class="p-wrap"> 
                 <p>3. 選擇此筆紀錄的類型(預設為支出)<br><em>轉帳為帳戶間互轉</em></p>
-                <p>4. 分類/帳戶為必填內容 , 預設帶最後一次填寫的值</p>
-                <p>5. 點擊儲存即完成新增 , 並回到前一頁</p>
+                <p>4. 分類/帳戶為必填內容，預設帶最後一次填寫的值</p>
+                <p>5. 點擊儲存即完成新增，並回到前一頁</p>
                 <p>6. 如有多筆紀錄，建議選擇 "儲存並在記下一筆"</p>
                 <p>7. 方便的樣板功能 <a class="faq-link" href="#" data="item-04">(點此連結至樣板說明)</a></p>
+                <P>8. 點擊常用分類/帳戶組合設定，可連結至設定頁面，您可以在設定頁面設定您的常用組合，例如："飲食三餐"以"現金"支出...等。</P>
               </div>
             </div>
             <div class="center"><a class="btn prev" href="#" data="item-01">上一頁</a><a class="btn next" href="#" data="item-03">下一頁</a></div>
@@ -183,8 +186,11 @@
           </section>
           <section id="item-12"> 
             <h1 class="title">CSV 匯入匯出</h1>
-            <p>目前僅支援匯出匯入.csv的檔案，匯出的文件可用純文字文件開啟查看，如您要備份完整的資料庫請使用<a class="faq-link" href="#" data="item-11">雲端硬碟備份。 </a></p>
-            <P>匯入檔案裡的“分類/帳戶/標籤 “， 必須事先在愛記帳 APP 內建立好 。  </P>
+            <ul class="number-list">
+              <li>目前僅支援匯出匯入.csv的檔案，如您要備份完整的資料庫請使用<a class="faq-link" href="#" data="item-11">雲端硬碟備份。 </a></li>
+              <li>匯入檔案裡的“分類/帳戶/標籤 “， 必須事先在愛記帳 APP 內建立好 。 </li>
+              <li>愛記帳匯出/匯入的.csv 檔案編碼格式為 UTF-8 。</li>
+            </ul>
             <h2 class="left-solid">匯出 </h2>
             <div class="pics pics-1"><img src="img/faq/12-01.png">
               <div class="p-wrap"> 
@@ -203,9 +209,13 @@
                 <P>5. 點擊確定，即完成匯出。</P>
               </div>
             </div>
-            <div class="pics pics-1"><img src="img/faq/12-04.png">
+            <div class="pics pics-2"><img src="img/faq/12-04.png"><img src="img/faq/12-05.png">
               <div class="p-wrap"> 
-                <p>如您出現以下錯誤訊息，請確認您 APP 內是否有建立檔案裡的"分類/帳戶/標籤"。    </p>
+                <p>
+                  如您出現以上錯誤訊息，請確認您以下：<br>1.匯入的檔案編碼是否為 UTF-8。(圖一) <br>
+                  2.格式是否同愛記帳匯出的檔案格式。(圖一) <br>
+                  3.是否有建立檔案裡的"分類/帳戶/標籤"。(圖二)   <br> 
+                </p>
               </div>
             </div>
             <div class="center"><a class="btn prev" href="#" data="item-11">上一頁</a><a class="btn next" href="#" data="item-13">下一頁</a></div>
@@ -256,13 +266,19 @@
           </section>
           <section id="item-22"> 
             <h1 class="title">.csv 匯出檔案亂碼</h1>
-            <h2 class="left-solid">使用 Excel 開啟中文文字為亂碼</h2>
-            <p>愛記帳匯出的.csv 檔案編碼格式為 UTF-8，Excel 預設編碼設定為 ANSI，可參照以下方式修改編碼 ：</p>
-            <p> <em>1. 在檔案上點選滑鼠右鍵，將檔案以記事本開啟。</em></p>
+            <p>愛記帳匯出的.csv 檔案編碼格式為 UTF-8 (Unicode)，如遇到預設編碼非為 UTF-8 (Unicode) 的編輯器，如 Excel，這樣會導致中文出現亂碼，我們提供以下幾種方式協助您修改編碼。</p>
+            <h2 class="left-solid">方式一.使用 Open office 編輯</h2>
+            <P> <em>1. 如無安裝此軟體，可至 <a href="https://www.openoffice.org/zh-tw/" targer="_blank">OpenOffice 官網下載安裝</a></em></P>
+            <P> <em>2. 在檔案上點擊滑鼠右鍵，將檔案以 Open office 開啟。</em></P>
+            <P> <em>3. 字型選擇 "Unicode (UTF-8)"，語言選擇"預設-中文(繁體)"，分隔選項勾選"逗號"，點擊確定。 </em></P><img class="marg30-b" src="img/faq/22-01.jpg">
+            <P> <em>4. 開啟後如下圖。</em></P><img class="marg30-b" src="img/faq/22-02.jpg">
+            <P> <em>5. 如要儲存可匯入回愛記帳的格式，點擊 "檔案 → 另存新檔"。</em></P><img class="marg30-b" src="img/faq/22-03.jpg">
+            <P> <em>6. 需勾選"編輯篩選設定"。</em></P><img class="marg30-b" src="img/faq/22-04.jpg">
+            <P> <em>8. 輸出成文字檔案，字型選擇"Unicode (UTF-8)"，點擊確定，完成存檔。</em></P><img class="marg30-b" src="img/faq/22-05.jpg">
+            <h2 class="left-solid">方式二. 使用純文字文件修改編碼</h2>
+            <p> <em>1. 在檔案上點擊滑鼠右鍵，將檔案以記事本開啟。</em></p>
             <p> <em>2. 開啟後，點選儲存，關閉檔案再以 Excel 開啟即可正常顯示。</em></p>
-            <p class="color-red">注意：修改編碼後，如需再匯入愛記帳需再改回 UTF-8 編碼格式。</p>
-            <h2 class="left-solid">將修改後的檔案編碼儲存為 UTF-8 </h2>
-            <p>選擇"另存新檔"，儲存類型選擇"Unicode 文字(*.txt)"</p>
+            <p> <em>註：使用此方式修改過編碼後的檔案，如要匯入愛記帳，需再改回 UTF-8 (Unicode) 格式。</em></p>
             <div class="center marg40-t"><a class="btn prev" href="#" data="item-21">上一頁</a><a class="btn next" href="#" data="item-23">下一頁  </a></div>
           </section>
           <section id="item-23"> 
