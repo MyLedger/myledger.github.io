@@ -72,19 +72,28 @@
           <section class="show"> 
             <h1 class="title">掃描紙本電子發票 QR Code </h1>
             <p>This can only scan electronic invoices issued by Taiwan</p>
-            <div class="tip">電子發票掃描功能測試中... 如有掃描不到發票等問題，<br>請來信至 <a href="mailto:myledger2017@gmail.com?subject=掃描電子發票 QR Code 問題回報">myledger2017@gmail.com </a>並附上發票照片及您的手機型號，謝謝</div>
-            <h2 class="left-solid">使用須知</h2>
-            <ul class="dot-list marg40-b">
-              <li>發生電子發票無法掃描的因素很多，如 : 商家的 QR Code 格式特殊或列印品質不佳、環境光源因素、手機與掃描元件的溝通不良、財政部網站連線異常...等，都有可能是掃描失敗的原因，如無法掃描發票，可手動輸入下載發票。</li>
-              <li>財政部網路常連線不穩定 (尤其為單月 25 號後幾日)，異常時請不同時間再試試。</li>
-              <li>掃描後資料來源為財政部提供，購買資料可能不完全 (例如紅利積點扣除金額)，且須等商家上傳資料至財政部後 (48小時內)，才提供查詢。</li>
-              <li>如出現「無效的發票號碼」訊息，且離購買時間 48 小時內，可能是發票尚未上傳至財政部，請稍後再試。</li>
-              <li class="red"> 推薦您使用 <a href="FAQ-c02.html">載具 </a>來記錄電子發票可以省去逐筆掃描輸入的時間喔！</li>
+            <h2 class="left-solid">訊息說明</h2>
+            <ul class="dot-list marg40-b"> 
+              <li>No value for invPeriod : <em>讀取不到該張發票，可能為「發票尚未上傳至財政部」或「財政部伺服器異常」，請稍後在試。</em></li>
+              <li>無效的條碼 : <em>掃描到畫面中其他的條碼，您可以試著遮住其他的條碼來進行掃描。</em></li>
+              <li>讀取中 : <em>代表掃描元件已掃描到該條碼，正在讀取條碼內資訊。 </em></li>
+              <li>無網路連線 : <em>請確認您的手機網路連線狀態。     </em></li>
             </ul>
-            <h2 class="left-solid">使用技巧</h2>
-            <ul class="dot-list marg40-b">
-              <li>如出現「無效的條碼」訊息，代表掃描到畫面中其他的條碼，您可以試著遮住其他的條碼 來進行掃描。</li>
+            <h2 class="left-solid">讀不到發票資訊的可能因素</h2>
+            <ul class="dot-list marg40-b a-hide">
+              <li>發票尚未上傳至財政部<br><em>商家開立發票後，會在48小時內上傳資料至<a href="https://www.einvoice.nat.gov.tw/APMEMBERVAN/GeneralCarrier/generalCarrier!toChangeVerifyCode" target="_blank">財政部電子發票整合平台</a>，上傳後才提供查詢。</em></li>
+              <li>財政部伺服器異常<br><em>財政部網路常連線不穩定 (尤其為單月 25 號後幾日)，異常時請不同時間再試試。</em></li>
+              <li>沒有網路連線<br><em>連結至財政部須依賴網路連線，請保持您的手機網路連線暢通。</em></li>
+              <li>掃描到畫面中其他的條碼<br><em>您可以試著遮住其他的條碼來進行掃描。</em></li>
+              <li>商家的 QR Code 格式特殊或列印品質不佳、環境光源不佳<br><em>掃描元件掃描不到該條碼，請改用手動輸入該發票，如手動輸入也讀不到發票，為「發票尚未上傳至財政部」或「財政部伺服器異常」或「沒有網路連線」這三種可能。  </em></li>
+              <li>手機與掃描元件的溝通不良<br><em>如大部分的發票都無法掃描，也排除了以上五個可能因素，代表您的手機與愛記帳的掃描元件溝通不良，Android 手機款式眾多，我們只能盡量測試與優化，建議您可以試試<a href="FAQ-c02.html">「載具 」</a>來記錄電子發票可以省去逐筆掃描輸入的時間喔！</em></li>
+            </ul>
+            <h2 class="left-solid">使用須知&技巧</h2>
+            <ul class="dot-list marg40-">
+              <li>
+                發票明細與金額的來源有以下：<br><br>1. 商家上傳至財政部透過條碼讀取 (愛記帳採用方式) <br><em>須等商家上傳資料至財政部後 (48小時內)，且須依賴網路，才提供查詢。<br></em>2. 條碼內儲存<br><em>條碼內存的資訊有限，如遇較長的購物清單，會有資料不完整/統計金額不正確的問題。<br><br> </em></li>
               <li>列印品質較差的發票，可試著將發票與手機距離慢慢拉遠掃描，不一定要填滿整個方形框。</li>
+              <li class="red"> 推薦您使用 <a href="FAQ-c02.html">載具 </a>來記錄電子發票可以省去逐筆掃描輸入的時間喔！</li>
             </ul>
             <h2 class="left-solid">介面操作流程 </h2>
             <div class="pics pics-2"><img src="img/faq/c01-01.png"><img src="img/faq/c01-02.png">
